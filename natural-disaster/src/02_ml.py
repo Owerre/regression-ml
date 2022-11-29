@@ -92,9 +92,9 @@ class RegressionML:
         mae = mean_absolute_error(y_true, y_pred)
         rmse = np.sqrt(mean_squared_error(y_true, y_pred))
         errors = {
-            f'MAE = {np.round(mae,3)}',
-            f'RMSE = {np.round(rmse,3)}',
-            f'R^2 = {np.round(r2,3)}',
+            'MAE' : np.round(mae,3),
+            'RMSE' : np.round(rmse,3),
+            'R^2' : np.round(r2,3),
         }
         return errors
         
